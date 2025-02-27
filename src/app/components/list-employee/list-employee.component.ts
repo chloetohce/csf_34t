@@ -11,7 +11,7 @@ import { EmployeeService } from '../../services/employee.service';
 export class ListEmployeeComponent implements OnInit {
   employees!: Employee[]
 
-  displayedColumns: string[] = ['id', 'fname', 'lname', 'email']
+  displayedColumns: string[] = ['id', 'fname', 'lname', 'email', 'actions']
 
   constructor(private employeeService: EmployeeService) { }
 

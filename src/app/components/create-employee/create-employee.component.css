@@ -1,0 +1,36 @@
+.form-table {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    padding: 2px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.rows {
+    display: flex;
+    flex-direction: row;
+    width: 30vw;
+    margin: 5px;
+
+}
+
+.rows label {
+    width: 20%;
+}
+
+.rows input {
+    width: 80%;
+    padding: 2px;
+}
+
+.form-table button {
+    width: 30%;
+    align-self: flex-end;
+    margin-right: 5px;
+}
+
+button {
+    margin-top: 10px;
+    margin-left: 5px;
+}
