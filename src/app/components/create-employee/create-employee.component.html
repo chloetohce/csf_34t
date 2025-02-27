@@ -1,1 +1,21 @@
-<p>create-employee works!</p>
+<button type="button" mat-raised-button (click)="toggleForm()">Add</button>
+
+@if (isFormDisplayed) {
+    <form action="" [formGroup]="form" (submit)="processForm()" >
+        <div>
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" id="firstName" formControlName="firstName">
+        </div>
+        <div>
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" id="lastName" formControlName="lastName">
+        </div>
+        <div>
+            <label for="emailId">Email</label>
+            <input type="text" name="emailId" id="emailId" formControlName="emailId">
+        </div>
+    
+        <button type="submit">Create</button>
+    </form>
+
+}

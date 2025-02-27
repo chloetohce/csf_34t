@@ -8,6 +8,7 @@ import { UpdateEmployeeComponent } from './components/update-employee/update-emp
 import { DetailsEmployeeComponent } from './components/details-employee/details-employee.component';
 import { provideHttpClient } from '@angular/common/http';
 import { MaterialModule } from './material/material/material.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MaterialModule } from './material/material/material.module';
   ],
   imports: [
     BrowserModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideHttpClient()
